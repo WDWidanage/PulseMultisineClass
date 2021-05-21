@@ -2,7 +2,7 @@
 
 
 ## Intro
-This MATALB class allows a user to define a pulse-multisine signal (as an alternative to the commonly used HPPC - Hybrid Pulse Power Characterisation test) to develop non-linear equivalent circuit models of lithium-ion batteries as a function of state-of-charge and temperature.
+This MATALB class allows a user to define a pulse-multisine signal (as an alternative to the commonly used HPPC - Hybrid Pulse Power Characterisation test) to develop a non-linear equivalent circuit model of lithium-ion batteries as a function of state-of-charge and temperature.
 
 ## Step 1 - Generate a pulse-multisine
 The procedure to design a pulse-multisine signal is explained in [Paper 1]( https://www.sciencedirect.com/science/article/pii/S0378775316305511?casa_token=j3psTFsv61QAAAAA:R2WsiBDDyz6AVdILwqrGIv6TMKm21G8d2I-9FcbzAJIKShRsLEp6GjY1GGoNyTtQjsdxLVdmoQ)
