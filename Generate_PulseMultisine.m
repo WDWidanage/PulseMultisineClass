@@ -78,7 +78,14 @@ fs = 10;            % Sampling frequency at which the cell cylcer is run. Normma
 % Used for filename saving. No influence on signal design
 refSoC = 50;           % SoC at which pulse-multisine is expected to be applied
 refTemp = 25;          % Temperature at which pulse-multisine is expected to be applied
-saveSignal = 'n';
+saveSignal = 'n';      % If saveSignal is 'y', the script will: 
+                       %    - Generate a text file to import the signal to a cell cycler (the format of text file will need adapting for the cycler of interest). 
+                       %      This saved text file signal is one period of the pulse-multisien with time and current as the two columns. 
+                       %    - Save a PMObj variable 'p' which you will need to load once the 
+                       %      pulse-multisine signal is applied and the voltage
+                       %      response is measured. See "estimateNLECM.m" on how
+                       %      this PMObj is loaded and the measured current and
+                       %      voltage are used to then estimate a NL-ECM. 
 
 %% Create pulse-multisine signal
 sigProp = struct('cRate', cRate, 'cDmax',cDmax,'cCmax',cCmax,'T1',T1,'T2',T2,'T4',T4,'alpha',alpha,'fMax',fMax,'fs',fs,'refCell',refCell,'refSoC',refSoC,'refTemp',refTemp);       % Create a structure variable with the signal parameters

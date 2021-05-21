@@ -2,7 +2,7 @@
 % ECM (NLECM) based on a generated pulse-multisine signal using  the PMObj
 % class.
 %
-% This requires that the reference pulse-multisine is saved. This is tehn
+% This requires that the reference pulse-multisine is saved. This is then
 % loaded and the measured data is passed into the reference pulse-multisien
 % object to estimate the NLECM.
 %
@@ -42,7 +42,7 @@ p.estNLECM;                            % Estimate the NLECM
 
 p.plotAll;                             % Plot all the figures if required for analysis
 
-%% Print the NL-ECM parameters for convenience
+%% Print the NL-ECM parameters for convenience and if required to build a Simulink model
 
 % Parameters related to the linear ECM model
 Ro = p.nlECMPara.Ro     % The series Ohmic resistance [Ohms]
