@@ -65,19 +65,19 @@ addpath('PMObjClass')
 
 refCell = 'NCA_3Ah';
 cRate = 3.03;       % C-rate of the battery
-cDmax = 3;          % Maximum applicable 10 s discharge current, for a given SoC and temperature, as specified by the manufacture
-cCmax = 3;          % Maximum applicable 10 s dharge current, for a given SoC and temperature, as specified by the manufacture
+cDmax = 3;          % Maximum applicable 10 s discharge c-rate [-], for a given SoC and temperature, as specified by the manufacture
+cCmax = 3;          % Maximum applicable 10 s dharge c-rate [-], for a given SoC and temperature, as specified by the manufacture
 
-T1 = 10;            % Time interval of the largest base-signal pulse
-T2 = 20;            % Time interval of the first base-signal rest period
-T4 = 20;            % Time interval of second base-signal rest period
-alpha = 0.6;        % Fraction of smaller base-signal pulse compared to maximum allowed c-rate
-fMax = 1;           % Highest excited frequency in the multisine signal. This should be set to cover the frequency of interest. 1Hz is sufficient for a drive-cycle
-fs = 10;            % Sampling frequency at which the cell cylcer is run. Normmaly it is at 10Hz. Note that fs should always be fs >= 2*fMax.
+T1 = 10;            % Time interval [s] of the largest base-signal pulse
+T2 = 20;            % Time interval [s] of the first base-signal rest period
+T4 = 20;            % Time interval [s] of second base-signal rest period
+alpha = 0.6;        % Fraction [-] of smaller base-signal pulse compared to maximum allowed c-rate
+fMax = 1;           % Highest excited frequency [Hz] in the multisine signal. This should be set to cover the frequency of interest. 1Hz is sufficient for a drive-cycle
+fs = 10;            % Sampling frequency [Hz] at which the cell cylcer is run. Normmaly it is at 10Hz. Note that fs should always be fs >= 2*fMax.
 
 % Used for filename saving. No influence on signal design
-refSoC = 50;           % SoC at which pulse-multisine is expected to be applied
-refTemp = 25;          % Temperature at which pulse-multisine is expected to be applied
+refSoC = 50;           % SoC [-] at which pulse-multisine is expected to be applied
+refTemp = 25;          % Temperature [degC] at which pulse-multisine is expected to be applied
 saveSignal = 'n';      % If saveSignal is 'y', the script will: 
                        %    - Generate a text file to import the signal to a cell cycler (the format of text file will need adapting for the cycler of interest). 
                        %      This saved text file signal is one period of the pulse-multisien with time and current as the two columns. 
