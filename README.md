@@ -1,4 +1,4 @@
-# Pulse-multisine Class - To estimate non-linear equivalent circuit models of lithium-ion batteries
+# Pulse-multisine class - To estimate non-linear equivalent circuit models of lithium-ion batteries
 
 
 ## Intro
